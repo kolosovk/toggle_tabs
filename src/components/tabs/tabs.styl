@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+
 div.Wrap
     margin 0 auto
     width 70%
+    position relative
+    .Button
+        position: fixed
+        top 30px
+        left 30px
+        height 30px
+        width 30px 
+        border-radius: 50%
+        background-color #fff
+        &.changeColor
+            background-color red
     .Tab
         margin 38px 0
         .TabHead
@@ -11,6 +23,8 @@ div.Wrap
             background-color: #14142d
             display: flex
             align-items: center
+            &.changeColor
+                background-color: #ceced1
             .TabHeadText
                 margin: 0 42px  
                 vertical-align: middle
@@ -21,6 +35,8 @@ div.Wrap
                 line-height: 1.78
                 letter-spacing: 0.5px
                 color: #ceced1
+                &.changeColor
+                    color: #14142d
         .TabContent
             box-shadow: 0px 9px 15.4px 0.6px rgba(16, 16, 39, 0.34)
             background-color: #e3e3e2
@@ -35,4 +51,4 @@ div.Wrap
                 line-height: 1.79
                 letter-spacing: 0.4px
                 color: #494949
-                
+            

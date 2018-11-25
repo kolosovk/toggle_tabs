@@ -2,6 +2,19 @@
 div.Wrap {
   margin: 0 auto;
   width: 70%;
+  position: relative;
+}
+div.Wrap .Button {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+div.Wrap .Button.changeColor {
+  background-color: #f00;
 }
 div.Wrap .Tab {
   margin: 38px 0;
@@ -13,6 +26,9 @@ div.Wrap .Tab .TabHead {
   display: flex;
   align-items: center;
 }
+div.Wrap .Tab .TabHead.changeColor {
+  background-color: #ceced1;
+}
 div.Wrap .Tab .TabHead .TabHeadText {
   margin: 0 42px;
   vertical-align: middle;
@@ -23,6 +39,9 @@ div.Wrap .Tab .TabHead .TabHeadText {
   line-height: 1.78;
   letter-spacing: 0.5px;
   color: #ceced1;
+}
+div.Wrap .Tab .TabHead .TabHeadText.changeColor {
+  color: #14142d;
 }
 div.Wrap .Tab .TabContent {
   box-shadow: 0px 9px 15.4px 0.6px rgba(16,16,39,0.34);
